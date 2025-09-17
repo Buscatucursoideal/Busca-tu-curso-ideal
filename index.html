@@ -22,25 +22,13 @@
             scroll-behavior: smooth;
         }
 
-        /* Header con banner */
+        /* Header con color verde */
         header {
-            background: url('imagenes/banner.png') no-repeat center center/cover, #4CAF50;
+            background-color: #4CAF50;
             color: white;
             padding: 60px 20px;
             text-align: center;
             position: relative;
-        }
-        header::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0,0,0,0.2); /* overlay más ligero */
-            z-index: 1;
-        }
-        header h1, header nav, header .menu-toggle {
-            position: relative;
-            z-index: 2;
         }
 
         /* Menú normal */
@@ -185,12 +173,11 @@
     <h1>Cursos de Programación</h1>
     <div class="container">
         <div class="curso">
-    <img src="imagenes/python.jpg" alt="Curso Python">
-    <h3>Python desde cero</h3>
-    <p>Domina Python desde lo básico hasta la programación orientada a objetos. Aprende a crear aplicaciones prácticas, manejar estructuras de datos, condicionales, ciclos y librerías para desarrollo web, automatización y análisis de datos.</p>
-    <a href="https://edutin.com/curso-de-python" target="_blank">Acceder</a>
-</div>
-
+            <img src="imagenes/python.jpg" alt="Curso Python">
+            <h3>Python desde cero</h3>
+            <p>Domina Python desde lo básico hasta la programación orientada a objetos. Aprende a crear aplicaciones prácticas, manejar estructuras de datos, condicionales, ciclos y librerías para desarrollo web, automatización y análisis de datos.</p>
+            <a href="https://edutin.com/curso-de-python" target="_blank">Acceder</a>
+        </div>
         <div class="curso">
             <img src="imagenes/htmlcss.jpg" alt="Curso HTML y CSS">
             <h3>HTML y CSS</h3>
@@ -218,5 +205,3 @@
 
 </body>
 </html>
-
-
