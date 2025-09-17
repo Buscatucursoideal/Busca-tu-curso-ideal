@@ -18,20 +18,30 @@
             scroll-behavior: smooth;
         }
 
-        /* Header y menú */
+        /* Header con banner */
         header {
-            background-color: #4CAF50;
+            background: url('imagenes/banner.jpg') no-repeat center center/cover;
             color: white;
-            padding: 20px;
+            padding: 60px 20px;
             text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            position: relative;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.4); /* oscurece la imagen */
+            z-index: 1;
+        }
+        header h1, header nav, header .menu-toggle {
+            position: relative;
+            z-index: 2;
         }
 
         /* Menú normal */
         nav {
-            margin-top: 10px;
+            margin-top: 20px;
         }
         nav a {
             color: white;
@@ -56,7 +66,7 @@
             color: white;
         }
 
-        /* Responsive */
+        /* Responsive menú */
         @media (max-width: 768px) {
             nav {
                 display: none;
@@ -192,7 +202,7 @@
 </section>
 
 <script>
-    // Script para el menú hamburguesa
+    // Script para menú hamburguesa
     const toggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav');
 
@@ -203,3 +213,6 @@
 
 </body>
 </html>
+
+</html>
+
